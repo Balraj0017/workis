@@ -35,3 +35,15 @@ jobs:
     steps:
       - name: Print the value 
         run: echo balraj 
+        
+  production:
+    runs-on: ubuntu-latest
+    needs: build
+    if: always()
+    environment:
+      name: display
+
+    steps:
+      - name: Print the value 
+        run: echo balraj 
+
