@@ -1,4 +1,4 @@
-name: CI
+name: Balraj test
 
 on:
   push:
@@ -22,3 +22,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  display:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the value 
+        run: echo balraj 
