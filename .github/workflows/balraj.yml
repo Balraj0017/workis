@@ -10,6 +10,7 @@ on:
   
 env:
   Greeting: My jobs
+  url: https://www.youtube.com/
 
 jobs:
   build:
