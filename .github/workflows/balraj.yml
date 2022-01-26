@@ -24,6 +24,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+        env:
+         SABHARWAL_SECRETS: ${{ secret.SABHARWAL_SECRETS }}
+  
   display:
     runs-on: ubuntu-latest
     needs: build
