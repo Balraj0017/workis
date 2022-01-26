@@ -24,9 +24,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo $SABHARWAL_SECRETS
+          echo $SABHARWAL_SECURE
         env:
-         SABHARWAL_SECRETS: ${{ secret.SABHARWAL_SECRETS }}
+         SABHARWAL_SECURE: ${{ secret.SABHARWAL_SECRETS }}
   
   display:
     runs-on: ubuntu-latest
